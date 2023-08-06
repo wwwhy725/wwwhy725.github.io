@@ -11,21 +11,21 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. Mathematics, University of Science and Technology of China (USTC), 2020-present
+<!--* M.S. in Jekyll, GitHub University, 2014 -->
+<!--* Ph.D in Version Control Theory, GitHub University, 2018 (expected) -->
 
-Work experience
+Research experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Dec. 2022 -- Present: student research project
+  * University of Science and Technology of China (USTC)
+  <!-- * Brief introduction: -->
+  * Supervisor: Professor Chen
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Jun. 2023 -- Present: Research Assistant
+  * University of HongKong (HKU)
+  <!-- * Duties included: Merging pull requests -->
+  * Supervisor: Professor Zou
   
 Skills
 ======
