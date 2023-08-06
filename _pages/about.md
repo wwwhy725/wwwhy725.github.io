@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Here is Hanyu Wang, and 王晗宇 in Chinese. Currently, I'm in the final year of undergrad in the University of Science and Technology of China (USTC). I major in computational mathematics and my research interests lie in the intersection of mathematics and AI. To be specific, I am exactly interested in machine learning theory and deep learning. Also, optimization, statistics, and operation research are attractive to me.
+Here is Hanyu Wang, and 王晗宇 in Chinese. Currently, I'm in the final year of undergrad at the University of Science and Technology of China (USTC). I major in computational mathematics and my research interests lie in the intersection of mathematics and AI. To be specific, I am exactly interested in machine learning theory and deep learning. Also, optimization, statistics, and operation research are attractive to me.
 
 A data-driven personal website
 ======
