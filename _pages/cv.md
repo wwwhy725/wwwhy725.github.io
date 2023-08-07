@@ -17,43 +17,13 @@ Education
 
 Research experience
 ======
-* Dec. 2022 -- Present: student research project
+* Dec. 2022 -- Present: Student Research Project
   * University of Science and Technology of China (USTC)
   <!-- * Brief introduction: -->
-  * Supervisor: Professor Chen
+  * Supervisor: [Professor Chen](https://faculty.ustc.edu.cn/chenjingrun/)
 
-* Jun. 2023 -- Present: Research Assistant
+* Jun. 2023 -- Present: Summer Internship
   * University of HongKong (HKU)
   <!-- * Duties included: Merging pull requests -->
-  * Supervisor: Professor Zou
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  * Supervisor: [Professor Zou](https://difanzou.github.io/)
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
