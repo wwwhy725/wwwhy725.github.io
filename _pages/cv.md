@@ -27,5 +27,5 @@ Research experience
   <!-- * Duties included: Merging pull requests -->
   * Supervisor: [Professor Zou](https://difanzou.github.io/)
  
-You can get the full version of [cv] here.(https://wwwhy725.github.io/files/resume.pdf)
+You can get the full version of [cv] here.(https://wwwhy725.github.io/master/files/resume.pdf)
 
