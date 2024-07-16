@@ -8,9 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Here is Hanyu Wang, and 王晗宇 in Chinese. I'm currently in the final year of my undergraduate study at the University of Science and Technology of China (USTC). I major in Computational Mathematics and my research interests lie in the intersection of mathematics and artificial intelligence(AI). To be specific, I have a strong passion for machine learning theory and deep learning. Additionally, I find optimization, statistics, and operations research to be highly intriguing. 
-
-Currently, my research is centered on generative models, with a specific emphasis on diffusion models.
+Here is Hanyu Wang, and 王晗宇 in Chinese. I'm a first-year PhD student in Penn State University under supervision of Prof. [Jinghui Chen](https://jinghuichen.github.io/). Previously, I received my Bachelor of Science degree from the Department of Mathematics at University of Science and Technology of China(USTC) in June 2024.
 
 Contact
 =======
