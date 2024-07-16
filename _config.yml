@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Hanyu Wang"
   avatar           : "zhangyuge.jpg"
-  bio              : "USTCer, Lakers fan"
+  bio              : "USTC->PSU, Lakers fan"
   location         : "Hefei, Anhui, P.R.CHINA"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   # googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : "why0725@mail.ustc.edu.cn"
+  email            : "hbw5365@psu.edu"
   # researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  LinkedIn         :"https://www.linkedin.com/in/wwwhy/"
   # orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
