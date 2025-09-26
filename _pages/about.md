@@ -19,7 +19,7 @@ My research lies at the intersection of Natural Language Processing and Trustwor
 News
 ======
 
-[2025/05] Our paper, "TruthFlow: Truthful LLM Generation via Representation Flow Correction," was accepted to ICML 2025!
+[2025/05] Our paper, "[TruthFlow: Truthful LLM Generation via Representation Flow Correction](https://arxiv.org/pdf/2502.04556)", was accepted to ICML 2025!
 
 
 Contact
