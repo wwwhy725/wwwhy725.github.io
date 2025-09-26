@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Hanyu Wang"
   avatar           : "zhangyuge.jpg"
-  bio              : "USTC->PSU, Lakers fan"
-  location         : "State College, PA, USA"
+  bio              : #"USTC->PSU, Lakers fan"
+  location         : "State College"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=ubb3IBoAAAAJ&hl=en"
