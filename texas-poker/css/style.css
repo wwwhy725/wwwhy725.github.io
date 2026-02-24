@@ -684,6 +684,8 @@ body {
   border-radius: 16px;
   padding: 24px;
   width: min(440px, 90vw);
+  max-height: 90vh;
+  overflow-y: auto;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
@@ -729,32 +731,18 @@ body {
   margin-top: 3px;
 }
 
+.form-group .hint a { color: var(--accent); }
+.form-group .hint a:hover { color: #6fe8df; }
+
 .api-notice {
   background: rgba(78, 205, 196, 0.08);
   border: 1px solid rgba(78, 205, 196, 0.25);
-  border-radius: 8px;
-  padding: 10px 14px;
-  margin-top: 8px;
-  font-size: 0.75rem;
-  line-height: 1.5;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 4px;
+  font-size: 0.68rem;
+  line-height: 1.4;
   color: var(--text-muted);
-}
-
-.api-notice p + p {
-  margin-top: 6px;
-}
-
-.api-notice strong {
-  color: var(--accent);
-}
-
-.api-notice a {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-.api-notice a:hover {
-  color: #6fe8df;
 }
 
 .modal-actions {
