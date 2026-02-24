@@ -27,6 +27,10 @@ class PokerApp {
   }
 
   bindEvents() {
+    document.getElementById('poker-launcher').addEventListener('click', () => {
+      document.getElementById('poker-launcher').classList.add('hidden');
+      document.getElementById('game-container').classList.remove('hidden');
+    });
     document.getElementById('btn-start-game').addEventListener('click', () => this.startGame());
     document.getElementById('btn-welcome-settings').addEventListener('click', () => {
       // Hide welcome content, show settings inside the welcome overlay

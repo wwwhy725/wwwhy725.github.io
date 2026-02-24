@@ -30,6 +30,65 @@ body {
   overflow-x: hidden;
 }
 
+/* ---- Launcher Button ---- */
+
+.poker-launcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, var(--felt-green), var(--felt-dark));
+  border: 2px solid var(--gold);
+  border-radius: 50px;
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 15px rgba(212,168,67,0.2);
+  transition: all 0.3s ease;
+}
+
+.poker-launcher:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 28px rgba(0,0,0,0.5), 0 0 25px rgba(212,168,67,0.35);
+  border-color: #f0d878;
+}
+
+.poker-launcher:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.launcher-icon {
+  font-size: 1.4rem;
+}
+
+.launcher-text {
+  letter-spacing: 0.5px;
+}
+
+.poker-launcher.hidden {
+  display: none;
+}
+
+/* ---- Game Container ---- */
+
+.game-container {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: var(--darker-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.game-container.hidden {
+  display: none;
+}
+
 /* ---- Header ---- */
 
 .header {
