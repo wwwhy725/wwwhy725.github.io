@@ -420,18 +420,16 @@ class UIController {
     const modelGroup = document.getElementById('model-group');
     const hint = document.getElementById('provider-hint');
 
-    if (provider === 'default') {
-      apiKeyGroup.style.display = 'none';
-      modelGroup.style.display = 'none';
-      hint.textContent = 'Free AI powered by Gemini. No API key needed.';
-    } else if (provider === 'none') {
+    if (provider === 'none') {
       apiKeyGroup.style.display = 'none';
       modelGroup.style.display = 'none';
       hint.textContent = 'AI players use built-in heuristic strategies (no LLM).';
     } else {
       apiKeyGroup.style.display = '';
       modelGroup.style.display = '';
-      hint.textContent = 'Provide your own API key to use this provider.';
+      hint.textContent = provider === 'gemini'
+        ? 'Gemini offers a free API tier - great for getting started!'
+        : 'Enter your OpenAI API key to use GPT models.';
     }
   }
 
@@ -450,7 +448,7 @@ class UIController {
     if (saved) {
       try {
         const settings = JSON.parse(saved);
-        document.getElementById('llm-provider').value = settings.provider || 'default';
+        document.getElementById('llm-provider').value = settings.provider || 'none';
         document.getElementById('api-key').value = settings.apiKey || '';
         document.getElementById('llm-model').value = settings.model || '';
         document.getElementById('player-name').value = settings.playerName || '';

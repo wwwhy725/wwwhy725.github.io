@@ -8,8 +8,6 @@ import { UIController } from './ui-controller.js';
 
 const STARTING_CHIPS = 1000;
 const BUY_IN_AMOUNT = 1000;
-const DEFAULT_GEMINI_KEY = 'AIzaSyCkDCG-PMojVrjSDOlUntDTwLHtKEBHfzk';
-const DEFAULT_MODEL = 'gemini-2.0-flash';
 
 class PokerApp {
   constructor() {
@@ -27,10 +25,6 @@ class PokerApp {
   }
 
   bindEvents() {
-    document.getElementById('poker-launcher').addEventListener('click', () => {
-      document.getElementById('poker-launcher').classList.add('hidden');
-      document.getElementById('game-container').classList.remove('hidden');
-    });
     document.getElementById('btn-start-game').addEventListener('click', () => this.startGame());
     document.getElementById('btn-welcome-settings').addEventListener('click', () => {
       // Hide welcome content, show settings inside the welcome overlay
@@ -69,10 +63,7 @@ class PokerApp {
   initPlayers() {
     const settings = this.ui.getSettings();
 
-    if (settings.provider === 'default') {
-      const provider = new LLMProvider('gemini', DEFAULT_GEMINI_KEY, DEFAULT_MODEL);
-      this.aiPlayer = new AIPlayer(provider);
-    } else if (settings.provider !== 'none' && settings.apiKey) {
+    if (settings.provider !== 'none' && settings.apiKey) {
       const provider = new LLMProvider(settings.provider, settings.apiKey, settings.model);
       this.aiPlayer = new AIPlayer(provider);
     } else {
@@ -134,9 +125,7 @@ class PokerApp {
     this.ui.addLogMessage('Welcome to Texas Hold\'em!');
     this.ui.addLogMessage(`${this.game.players.length} players at the table.`);
 
-    if (settings.provider === 'default') {
-      this.ui.addLogMessage(`AI powered by Gemini (${DEFAULT_MODEL}) - Free mode`);
-    } else if (settings.provider !== 'none' && settings.apiKey) {
+    if (settings.provider !== 'none' && settings.apiKey) {
       const modelName = this.aiPlayer.llmProvider?.getModelName() || 'unknown';
       this.ui.addLogMessage(`AI powered by ${settings.provider === 'openai' ? 'OpenAI' : 'Google Gemini'} (${modelName})`);
     } else {

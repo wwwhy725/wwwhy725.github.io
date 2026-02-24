@@ -1,3 +1,33 @@
 <!-- start custom footer snippets -->
 <a href="/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->
+
+<!-- Poker Launcher -->
+<a href="/texas-poker/" class="poker-launcher-btn" title="Play Texas Hold'em Poker">
+  <span>&#127183;</span>
+</a>
+<style>
+.poker-launcher-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #1a6b3c, #0d4a25);
+  border: 2px solid #d4a843;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.4), 0 0 10px rgba(212,168,67,0.15);
+  transition: all 0.3s ease;
+}
+.poker-launcher-btn:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5), 0 0 18px rgba(212,168,67,0.3);
+  border-color: #f0d878;
+}
+</style>

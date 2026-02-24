@@ -30,65 +30,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ---- Launcher Button ---- */
-
-.poker-launcher {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 20px;
-  background: linear-gradient(135deg, var(--felt-green), var(--felt-dark));
-  border: 2px solid var(--gold);
-  border-radius: 50px;
-  color: var(--text-light);
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 15px rgba(212,168,67,0.2);
-  transition: all 0.3s ease;
-}
-
-.poker-launcher:hover {
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 6px 28px rgba(0,0,0,0.5), 0 0 25px rgba(212,168,67,0.35);
-  border-color: #f0d878;
-}
-
-.poker-launcher:active {
-  transform: translateY(0) scale(0.98);
-}
-
-.launcher-icon {
-  font-size: 1.4rem;
-}
-
-.launcher-text {
-  letter-spacing: 0.5px;
-}
-
-.poker-launcher.hidden {
-  display: none;
-}
-
-/* ---- Game Container ---- */
-
-.game-container {
-  position: fixed;
-  inset: 0;
-  z-index: 500;
-  background: var(--darker-bg);
-  display: flex;
-  flex-direction: column;
-}
-
-.game-container.hidden {
-  display: none;
-}
-
 /* ---- Header ---- */
 
 .header {
@@ -129,6 +70,17 @@ body {
 .btn-secondary:hover { background: rgba(255,255,255,0.18); }
 .btn-danger { background: linear-gradient(135deg, var(--danger), #c0392b); color: #fff; }
 .btn-warning { background: linear-gradient(135deg, var(--warning), #e67e22); color: #fff; }
+
+.btn-exit {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 6px 10px;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.btn-exit:hover { background: rgba(255,255,255,0.18); color: var(--text-light); }
 
 /* ---- Main Layout ---- */
 
@@ -775,6 +727,34 @@ body {
   font-size: 0.68rem;
   color: var(--text-muted);
   margin-top: 3px;
+}
+
+.api-notice {
+  background: rgba(78, 205, 196, 0.08);
+  border: 1px solid rgba(78, 205, 196, 0.25);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.api-notice p + p {
+  margin-top: 6px;
+}
+
+.api-notice strong {
+  color: var(--accent);
+}
+
+.api-notice a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.api-notice a:hover {
+  color: #6fe8df;
 }
 
 .modal-actions {
