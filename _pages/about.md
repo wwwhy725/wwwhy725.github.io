@@ -21,7 +21,7 @@ News
 
 <div style="max-height: 260px; overflow-y: auto; padding: 4px 18px 4px 14px; border-left: 3px solid #e8e8e8;" markdown="1">
 
-* [2026/05] Our new paper, "[SkillGrad](https://arxiv.org/pdf/2605.27760)", is now available on arXiv, with code released on [GitHub](https://github.com/wwwhy725/SkillGrad).
+* [2026/05] Our new paper, "[SkillGrad: Optimizing Agent Skills Like Gradient Descent](https://arxiv.org/pdf/2605.27760)", is now available on arXiv, with code released on [GitHub](https://github.com/wwwhy725/SkillGrad).
 * [2026/05] Started my summer research internship at **Honda Research Institute**.
 * [2026/05] Honored to be recognized as a **Silver Reviewer** at ICML 2026.
 * [2026/02] Our paper, "[PreFlect: From Retrospective to Prospective Reflection in Large Language Model Agents](https://arxiv.org/pdf/2602.07187)", is now available on arXiv.
@@ -33,15 +33,15 @@ News
 Selected Publications & Preprints
 ======
 
-* **SkillGrad** [[Paper]](https://arxiv.org/pdf/2605.27760) [[Code]](https://github.com/wwwhy725/SkillGrad)
-  <br>Hanyu Wang, et al.
+* **SkillGrad: Optimizing Agent Skills Like Gradient Descent** [[Paper]](https://arxiv.org/pdf/2605.27760) [[Code]](https://github.com/wwwhy725/SkillGrad)
+  <br>Hanyu Wang, Yifan Lan, Bochuan Cao, Lu Lin, Jinghui Chen
   <br>*Preprint*
 
 * **PreFlect: From Retrospective to Prospective Reflection in Large Language Model Agents** [[Paper]](https://arxiv.org/pdf/2602.07187)
   <br>Hanyu Wang, Yuanpu Cao, Lu Lin, Jinghui Chen
   <br>*Preprint / Under Review*
 
-* **TruthFlow: Truthful LLM Generation via Representation Flow Correction** [[Paper]](https://arxiv.org/abs/2502.04556)
+* **TruthFlow: Truthful LLM Generation via Representation Flow Correction** [[Paper]](https://arxiv.org/abs/2502.04556) [[Code]](https://github.com/wwwhy725/TruthFlow)
   <br>Hanyu Wang, Bochuan Cao, Yuanpu Cao, Jinghui Chen
   <br>*Proceedings of the 42nd International Conference on Machine Learning (ICML 2025)*
 
