@@ -1,2 +1,9 @@
 .env
 .DS_Store
+
+# local Jekyll build
+_site/
+.bundle/
+vendor/
+Gemfile.lock
+.jekyll-cache/
