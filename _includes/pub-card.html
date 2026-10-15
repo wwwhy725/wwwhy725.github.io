@@ -1,0 +1,20 @@
+{% include base_path %}{% assign pub = include.pub %}
+<div class="pub-card">
+  <div class="pub-thumb">
+    <span class="venue-badge venue-badge--{{ pub.venue_type }}">{{ pub.venue_short }}</span>
+    <div class="pub-thumb-frame">
+      {% if pub.teasers %}
+        {% for t in pub.teasers %}<a href="{{ base_path }}/images/pubs/{{ t }}"><img src="{{ base_path }}/images/pubs/{{ t }}" alt="{{ pub.title }}" loading="lazy"></a>{% endfor %}
+      {% else %}
+        <div class="pub-thumb-text"><span class="pub-thumb-text__main">{{ pub.teaser_text }}</span><span class="pub-thumb-text__sub">{{ pub.teaser_subtext }}</span></div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="pub-body">
+    <div class="pub-title">{% if pub.paperurl %}<a href="{{ pub.paperurl }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</div>
+    {% include pub-authors.html pub=pub %}
+    {% unless pub.venue_type == "preprint" %}<div class="pub-venue">{{ pub.venue }}</div>{% endunless %}
+    {% if include.excerpt and pub.excerpt %}<div class="pub-excerpt">{{ pub.excerpt | strip_html }}</div>{% endif %}
+    {% include pub-links.html pub=pub %}
+  </div>
+</div>

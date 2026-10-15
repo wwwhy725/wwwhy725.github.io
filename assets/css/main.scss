@@ -100,18 +100,16 @@
   text-align: center;
 }
 
-/* Publications: venue badges, selected cards, compact list */
+/* Publications: venue badges, paper cards */
 
 .venue-badge {
   display: inline-block;
-  margin-bottom: 0.3em;
-  padding: 0.1em 0.55em;
-  border: 1px solid transparent;
+  padding: 0.15em 0.6em;
   border-radius: 4px;
-  font-size: 0.72em;
+  font-size: 0.7em;
   font-weight: bold;
   letter-spacing: 0.02em;
-  line-height: 1.6;
+  line-height: 1.5;
 
   &--conference {
     background: #1f5fa8;
@@ -119,14 +117,111 @@
   }
 
   &--workshop {
-    border-color: #1f5fa8;
-    color: #1f5fa8;
+    background: #2f8f83;
+    color: #fff;
   }
 
   &--preprint {
-    background: #eceef0;
-    color: #5a6066;
+    background: #6b7680;
+    color: #fff;
   }
+}
+
+.pub-list {
+  margin: 0.5em 0 2em;
+}
+
+.pub-card {
+  display: flex;
+  gap: 1.4em;
+  align-items: center;
+  padding: 1.3em 0;
+  border-bottom: 1px solid #e6e8ea;
+
+  &:first-child {
+    padding-top: 0.6em;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.pub-thumb {
+  position: relative;
+  flex: 0 0 38%;
+  min-width: 0;
+
+  .venue-badge {
+    position: absolute;
+    top: -0.6em;
+    left: -0.5em;
+    z-index: 1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.pub-thumb-frame {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2 / 1;
+  padding: 8px;
+  border: 1px solid #e6e8ea;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+
+  a {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.pub-thumb-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(135deg, mix(#fff, $link-color, 88%), mix(#fff, #1f5fa8, 85%));
+  text-align: center;
+
+  &__main {
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    color: #1f5fa8;
+  }
+
+  &__sub {
+    display: block;
+    margin-top: 0.3em;
+    font-size: 0.7em;
+    color: #4a6a8a;
+  }
+}
+
+.pub-body {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .pub-title {
@@ -147,27 +242,28 @@
 .pub-authors,
 .pub-venue,
 .pub-excerpt {
-  margin-top: 0.2em;
-  font-size: 0.88em;
+  margin-top: 0.3em;
+  font-size: 0.86em;
+  line-height: 1.45;
 }
 
-.pub-venue {
-  font-style: italic;
-  color: #6b7177;
-}
-
+.pub-venue,
 .pub-excerpt {
   color: #6b7177;
 }
 
+.pub-venue {
+  font-style: italic;
+}
+
 .pub-links {
-  margin-top: 0.35em;
-  font-size: 0.82em;
+  margin-top: 0.5em;
+  font-size: 0.8em;
 
   a {
     display: inline-block;
     margin-right: 0.45em;
-    padding: 0 0.6em;
+    padding: 0 0.65em;
     border: 1px solid mix(#fff, $link-color, 40%);
     border-radius: 4px;
     text-decoration: none;
@@ -179,96 +275,20 @@
   }
 }
 
-.pub-list {
-  margin: 0.5em 0 2em;
-}
-
-.pub-card {
-  display: flex;
-  gap: 1.2em;
-  align-items: flex-start;
-  padding: 1em 0;
-  border-bottom: 1px solid #eee;
-
-  &:last-child {
-    border-bottom: none;
-  }
-}
-
-.pub-thumb {
-  display: flex;
-  flex: 0 0 34%;
-  gap: 4px;
-  align-items: center;
-  padding: 6px;
-  border: 1px solid #e6e8ea;
-  border-radius: 6px;
-  background: #fff;
-
-  a {
-    flex: 1 1 0;
-    min-width: 0;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
-
-.pub-thumb-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 4px;
-  background: linear-gradient(135deg, mix(#fff, $link-color, 88%), mix(#fff, #1f5fa8, 85%));
-
-  span {
-    font-size: 1.9em;
-    font-weight: bold;
-    letter-spacing: 0.06em;
-    color: #1f5fa8;
-  }
-
-  small {
-    margin-top: 0.2em;
-    color: #4a6a8a;
-    font-size: 0.72em;
-  }
-}
-
-.pub-body {
-  flex: 1 1 auto;
-  min-width: 0;
+.pub-year {
+  margin: 1.6em 0 0.4em;
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid #e6e8ea;
+  font-size: 1.2em;
 }
 
 @media (max-width: 600px) {
   .pub-card {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .pub-thumb {
     flex-basis: auto;
-    width: 100%;
-  }
-}
-
-.pub-year {
-  margin: 1.4em 0 0.2em;
-  padding-bottom: 0.2em;
-  border-bottom: 2px solid #eee;
-  font-size: 1.2em;
-}
-
-.pub-entry {
-  padding: 0.85em 0;
-  border-bottom: 1px dashed #e6e8ea;
-
-  &:last-child {
-    border-bottom: none;
   }
 }

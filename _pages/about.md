@@ -37,7 +37,10 @@ News
 Selected Publications & Preprints
 ======
 
-{% include selected-pubs.html %}
+{% assign selected = site.publications | where: "selected", true | sort: "date" | reverse %}
+<div class="pub-list">
+{% for pub in selected %}{% include pub-card.html pub=pub %}{% endfor %}
+</div>
 
 Academic Service
 ======

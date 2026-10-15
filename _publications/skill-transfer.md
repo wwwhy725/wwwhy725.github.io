@@ -9,4 +9,5 @@ paperurl: 'https://openreview.net/pdf?id=ag6fz5QxZ7'
 authors: 'Yifan Lan, Hanyu Wang, Lu Lin, Jinghui Chen'
 venue_short: 'NeurIPS 2026 Workshop'
 venue_type: workshop
+teasers: ['skill-transfer.png']
 ---

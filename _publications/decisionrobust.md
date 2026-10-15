@@ -11,4 +11,5 @@ codeurl: 'https://github.com/Yifan-Lan/DecisionRobust'
 authors: 'Yifan Lan, Zhongye Liu, Yurui Chang, Hanyu Wang, Yongkang Du, Lu Lin, Jinghui Chen'
 venue_short: 'Preprint'
 venue_type: preprint
+teasers: ['decisionrobust.png']
 ---
