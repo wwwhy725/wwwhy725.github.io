@@ -9,4 +9,6 @@ paperurl: 'https://arxiv.org/abs/2610.19118'
 projecturl: 'https://yifan-lan.github.io/DecisionRobust/'
 codeurl: 'https://github.com/Yifan-Lan/DecisionRobust'
 authors: 'Yifan Lan, Zhongye Liu, Yurui Chang, Hanyu Wang, Yongkang Du, Lu Lin, Jinghui Chen'
+venue_short: 'Preprint'
+venue_type: preprint
 ---

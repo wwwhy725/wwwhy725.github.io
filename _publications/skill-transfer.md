@@ -7,4 +7,6 @@ date: 2026-09-30
 venue: 'NeurIPS 2026 Workshop on Towards Test-Time Continual Learning Agents (TTCL)'
 paperurl: 'https://openreview.net/pdf?id=ag6fz5QxZ7'
 authors: 'Yifan Lan, Hanyu Wang, Lu Lin, Jinghui Chen'
+venue_short: 'NeurIPS 2026 Workshop'
+venue_type: workshop
 ---

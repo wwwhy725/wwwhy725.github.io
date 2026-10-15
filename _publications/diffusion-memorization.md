@@ -7,4 +7,6 @@ date: 2024-07-16
 venue: 'ICML 2024 Workshop on Foundation Models in the Wild'
 paperurl: 'https://openreview.net/pdf?id=ZqG5lo18tq'
 authors: 'Hanyu Wang, Yujin Han, Difan Zou'
+venue_short: 'ICML 2024 Workshop'
+venue_type: workshop
 ---

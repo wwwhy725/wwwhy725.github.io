@@ -39,3 +39,236 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+/* ==========================================================================
+   Homepage customizations
+   ========================================================================== */
+
+.news-box {
+  position: relative;
+  margin: 0.5em 0 2.5em;
+  border: 1px solid mix(#fff, $link-color, 70%);
+  border-radius: 8px;
+  background: mix(#fff, $link-color, 93%);
+
+  /* fade hint that the list scrolls */
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2em;
+    border-radius: 0 0 8px 8px;
+    background: linear-gradient(rgba(255, 255, 255, 0), mix(#fff, $link-color, 93%));
+    pointer-events: none;
+  }
+}
+
+.news-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 0.9em 1.2em 1.2em;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    padding: 0.55em 0;
+    border-bottom: 1px dashed mix(#fff, $link-color, 60%);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.news-date {
+  display: inline-block;
+  min-width: 4.6em;
+  margin-right: 0.5em;
+  padding: 0.05em 0.5em;
+  border-radius: 4px;
+  background: $link-color;
+  color: #fff;
+  font-family: $monospace;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Publications: venue badges, selected cards, compact list */
+
+.venue-badge {
+  display: inline-block;
+  margin-bottom: 0.3em;
+  padding: 0.1em 0.55em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 0.72em;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+
+  &--conference {
+    background: #1f5fa8;
+    color: #fff;
+  }
+
+  &--workshop {
+    border-color: #1f5fa8;
+    color: #1f5fa8;
+  }
+
+  &--preprint {
+    background: #eceef0;
+    color: #5a6066;
+  }
+}
+
+.pub-title {
+  font-weight: bold;
+  line-height: 1.35;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.pub-authors,
+.pub-venue,
+.pub-excerpt {
+  margin-top: 0.2em;
+  font-size: 0.88em;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: #6b7177;
+}
+
+.pub-excerpt {
+  color: #6b7177;
+}
+
+.pub-links {
+  margin-top: 0.35em;
+  font-size: 0.82em;
+
+  a {
+    display: inline-block;
+    margin-right: 0.45em;
+    padding: 0 0.6em;
+    border: 1px solid mix(#fff, $link-color, 40%);
+    border-radius: 4px;
+    text-decoration: none;
+
+    &:hover {
+      background: $link-color;
+      color: #fff;
+    }
+  }
+}
+
+.pub-list {
+  margin: 0.5em 0 2em;
+}
+
+.pub-card {
+  display: flex;
+  gap: 1.2em;
+  align-items: flex-start;
+  padding: 1em 0;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.pub-thumb {
+  display: flex;
+  flex: 0 0 34%;
+  gap: 4px;
+  align-items: center;
+  padding: 6px;
+  border: 1px solid #e6e8ea;
+  border-radius: 6px;
+  background: #fff;
+
+  a {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.pub-thumb-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
+  background: linear-gradient(135deg, mix(#fff, $link-color, 88%), mix(#fff, #1f5fa8, 85%));
+
+  span {
+    font-size: 1.9em;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    color: #1f5fa8;
+  }
+
+  small {
+    margin-top: 0.2em;
+    color: #4a6a8a;
+    font-size: 0.72em;
+  }
+}
+
+.pub-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .pub-card {
+    flex-direction: column;
+  }
+
+  .pub-thumb {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+.pub-year {
+  margin: 1.4em 0 0.2em;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #eee;
+  font-size: 1.2em;
+}
+
+.pub-entry {
+  padding: 0.85em 0;
+  border-bottom: 1px dashed #e6e8ea;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

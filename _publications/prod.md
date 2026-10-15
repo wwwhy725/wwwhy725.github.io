@@ -7,4 +7,8 @@ date: 2026-10-14
 venue: 'Advances in Neural Information Processing Systems (NeurIPS 2026)'
 paperurl: 'https://arxiv.org/abs/2610.19439'
 authors: 'Yuanpu Cao, Saket Sathe, Hanyu Wang, Ziyi Yin, Fenglong Ma, Jinghui Chen'
+venue_short: 'NeurIPS 2026'
+venue_type: conference
+selected: true
+teasers: ['prod.png']
 ---

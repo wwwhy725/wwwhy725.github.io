@@ -8,4 +8,8 @@ venue: 'Proceedings of the 42nd International Conference on Machine Learning (IC
 paperurl: 'https://arxiv.org/abs/2502.04556'
 codeurl: 'https://github.com/wwwhy725/TruthFlow'
 authors: 'Hanyu Wang, Bochuan Cao, Yuanpu Cao, Jinghui Chen'
+venue_short: 'ICML 2025'
+venue_type: conference
+selected: true
+teasers: ['truthflow-1.png', 'truthflow-2.png']
 ---

@@ -8,4 +8,8 @@ venue: 'Preprint'
 paperurl: 'https://arxiv.org/pdf/2605.27760'
 codeurl: 'https://github.com/wwwhy725/SkillGrad'
 authors: 'Hanyu Wang, Yifan Lan, Bochuan Cao, Lu Lin, Jinghui Chen'
+venue_short: 'Preprint'
+venue_type: preprint
+selected: true
+teasers: ['skillgrad.png']
 ---

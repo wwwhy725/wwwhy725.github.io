@@ -1,0 +1,1 @@
+{% assign pub = include.pub %}{% if pub.paperurl or pub.projecturl or pub.codeurl %}<div class="pub-links">{% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}{% if pub.projecturl %}<a href="{{ pub.projecturl }}">Project</a>{% endif %}{% if pub.codeurl %}<a href="{{ pub.codeurl }}">Code</a>{% endif %}</div>{% endif %}
