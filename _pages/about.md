@@ -26,6 +26,7 @@ News
 * <span class="news-date">2026/09</span> Our paper, "[ProD: Progress-Aware Distillation for Mitigating Stagnation in Small Language Model Agents](https://arxiv.org/pdf/2610.19439)", was accepted to **NeurIPS 2026**! See you in Atlanta!
 * <span class="news-date">2026/09</span> Our paper, "[Skill Transfer: Adapting Agent Skills from Strong to Weak Agents](https://openreview.net/pdf?id=ag6fz5QxZ7)", was accepted to the **[NeurIPS 2026 TTCL Workshop](https://ttcl-agents.github.io/)**.
 * <span class="news-date">2026/05</span> Our new paper, "[SkillGrad: Optimizing Agent Skills Like Gradient Descent](https://arxiv.org/pdf/2605.27760)", is now available on arXiv, with code released on [GitHub](https://github.com/wwwhy725/SkillGrad).
+* <span class="news-date">2026/05</span> Our paper on detecting evasive data contamination, "[The Illusion of Reasoning: Exposing Evasive Data Contamination in LLMs via Zero-CoT Truncation](https://arxiv.org/pdf/2605.21856)", is now available on arXiv, with [code](https://github.com/Yifan-Lan/zero-cot-probe).
 * <span class="news-date">2026/05</span> Started my summer research internship at **Honda Research Institute**.
 * <span class="news-date">2026/05</span> Honored to be recognized as a **Silver Reviewer** at ICML 2026.
 * <span class="news-date">2026/02</span> Our paper, "[PreFlect: From Retrospective to Prospective Reflection in Large Language Model Agents](https://arxiv.org/pdf/2602.07187)", is now available on arXiv.
